@@ -14,3 +14,9 @@ https://blog.rwth-aachen.de/irtg-mip/about-irtg-2379/).
 |When    | 15 December / 13:00 - 16:30 CEST (UTC+2) |
 |Where   | Online via Zoom |
 |YouTube | TBD |
+
+![](images/course-advertisement.png)
+
+## Abstract
+
+TBD
