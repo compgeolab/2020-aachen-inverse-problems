@@ -20,3 +20,10 @@ https://blog.rwth-aachen.de/irtg-mip/about-irtg-2379/).
 ## Abstract
 
 TBD
+
+## License
+
+All code and text in this repository is free software: 
+you can redistribute it and/or modify it under the terms of the 
+MIT License. A copy of this license is provided in 
+[LICENSE.txt](https://github.com/compgeolab/2020-aachen-inverse-problems/blob/main/LICENSE.txt)).
