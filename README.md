@@ -48,6 +48,38 @@ difficulties of quantifying the uncertainty in the solutions.
 The main goal of this tutorial is to impart theoretical and practical
 skills that can be easily transfered to other domains.
 
+## Format and schedule
+
+The course will be a mix of short presentations mixed with live coding
+(I will lead and learners will follow on their own computers). Participants 
+will also be assigned some short challenges to complete.
+
+The following is a tentative schedule:
+
+| Session 1 | 13:00 - 14:30 |
+|:----------|:--------------|
+| Introductions | 10 min |
+| ... | 10 min |
+
+**Break:** 30 minutes
+
+| Session 2 | 15:00 - 16:30 |
+|:----------|:--------------|
+| ... | 10 min |
+| ... | 10 min |
+| Wrap up | 10 min |
+
+
+## Setup (BEFORE THE WORKSHOP)
+
+Since there is large component of live coding, participants will
+have to set up their computers **before the workshop**. It's 
+extremely important that everyone has a working Python environment
+ahead of time as there will not be enough time to sort out 
+individual problems during the workshop.
+
+Introductions coming soon...
+
 ## License
 
 All code and text in this repository is free software:
