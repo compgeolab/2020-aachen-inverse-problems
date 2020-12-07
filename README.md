@@ -15,9 +15,38 @@ https://blog.rwth-aachen.de/irtg-mip/about-irtg-2379/).
 |Where   | Online via Zoom |
 |YouTube | TBD |
 
-![](images/course-advertisement.png)
+## BEFORE THE WORKSHOP
 
-## Abstract
+Since there is large component of live coding, participants will
+have to set up their computers **before the workshop**. It's 
+extremely important that everyone has a working Python environment
+ahead of time as there will not be enough time to sort out 
+individual problems during the workshop.
+
+1. **Download and install the Anaconda Python Distribution**.
+   Please follow the instructions here: 
+   https://carpentries.github.io/workshop-template/#python
+1. Make sure your installation works by opening JupyterLab through
+   the Anaconda Navigator app (on Windows) or by running 
+   `jupyter lab` in a terminal (Mac/Linux). You browser should
+   open with JupyterLab. 
+1. Brush up on your coding skills with [Software Carpentry's
+   Introduction to Python](https://swcarpentry.github.io/python-novice-inflammation/)
+   lesson. 
+
+**If you encounter any problems** please [open an "Issue" in 
+this repository](https://github.com/compgeolab/2020-aachen-inverse-problems/issues/new)
+(it will require a free GitHub account).
+
+We will be using [Jupyter Notebooks](https://jupyter.org/) to run our
+Python code and the libraries [numpy](https://numpy.org/), 
+[scipy](https://www.scipy.org/), and [matplotlib](https://matplotlib.org/).
+Anaconda already comes with all of these installed. 
+
+Code for the forward modelling will be provided from this repository
+(TBD).
+
+## About
 
 Inverse problems abound in geophysics.
 It is the primary way in which we investigate the subsurface of the Earth,
@@ -68,17 +97,6 @@ The following is a tentative schedule:
 | ... | 10 min |
 | ... | 10 min |
 | Wrap up | 10 min |
-
-
-## Setup (BEFORE THE WORKSHOP)
-
-Since there is large component of live coding, participants will
-have to set up their computers **before the workshop**. It's 
-extremely important that everyone has a working Python environment
-ahead of time as there will not be enough time to sort out 
-individual problems during the workshop.
-
-Introductions coming soon...
 
 ## License
 
