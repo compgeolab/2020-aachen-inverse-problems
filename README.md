@@ -88,22 +88,28 @@ skills that can be easily transfered to other domains.
 
 The course will be a mix of short presentations mixed with live coding
 (I will lead and learners will follow on their own computers). Participants 
-will also be assigned some short challenges to complete.
+will also be assigned short challenges to complete.
 
 The following is a tentative schedule:
 
 | Session 1 | 13:00 - 14:30 |
 |:----------|:--------------|
-| Introductions | 10 min |
-| ... | 10 min |
+| Introduction | 10 min |
+| Maths: geophysical inverse problem formulation | 10 min |
+| Exercise: what is the gradient of the misfit function? | 10 min |
+| Maths: solving non-linear inverse problems | 30 min |
+| Code: implementing a non-linear inverse problem | 30 min |
 
 **Break:** 30 minutes
 
 | Session 2 | 15:00 - 16:30 |
 |:----------|:--------------|
-| ... | 10 min |
-| ... | 10 min |
+| Exercise: add random noise to the data | 10 min |
+| Maths: smoothness regularization | 20 min |
+| Code: add smoothness to the inversion | 20 min |
+| Exercise: sharp vs smooth models (what about faults?) | 10 min |
 | Wrap up | 10 min |
+| Questions and extra time for discussion | 20 min |
 
 ## License
 
