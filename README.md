@@ -77,6 +77,13 @@ difficulties of quantifying the uncertainty in the solutions.
 The main goal of this tutorial is to impart theoretical and practical
 skills that can be easily transfered to other domains.
 
+## Learning objectives
+
+* Learn/revise the mathematics of non-linear inverse problems
+* Translate mathematical knowledge into code
+* Apply non-linear inversion theory to a real geophysical problem
+* Analyze the effects of regularization on geophysical models
+
 ## Format and schedule
 
 The course will be a mix of short presentations mixed with live coding
