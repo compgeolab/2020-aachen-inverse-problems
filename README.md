@@ -79,10 +79,24 @@ skills that can be easily transfered to other domains.
 
 ## Learning objectives
 
+This course is designed to empower you to:
+
 * Learn/revise the mathematics of non-linear inverse problems
 * Translate mathematical knowledge into code
 * Apply non-linear inversion theory to a real geophysical problem
 * Analyze the effects of regularization on geophysical models
+
+## Prerequisites
+
+I will assume that you:
+
+* Are comfortable with linear algebra (matrix and vector operations, 
+  norms, inverses, linear systems, etc)
+* Have an understanding of basic calculus (partial derivatives, gradients,
+  Taylor series expansions)
+* Are able to program a computer to build and manipulate matrices and 
+  vectors, solve linear systems, and make graphs/plots (in any language
+  but Python or Matlab would be best)
 
 ## Format and schedule
 
