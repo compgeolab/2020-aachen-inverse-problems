@@ -18,30 +18,30 @@ https://blog.rwth-aachen.de/irtg-mip/about-irtg-2379/).
 ## BEFORE THE WORKSHOP
 
 Since there is large component of live coding, participants will
-have to set up their computers **before the workshop**. It's 
+have to set up their computers **before the workshop**. It's
 extremely important that everyone has a working Python environment
-ahead of time as there will not be enough time to sort out 
+ahead of time as there will not be enough time to sort out
 individual problems during the workshop.
 
 1. **Download and install the Anaconda Python Distribution**.
-   Please follow the instructions here: 
+   Please follow the instructions here:
    https://carpentries.github.io/workshop-template/#python
 1. Make sure your installation works by opening JupyterLab through
-   the Anaconda Navigator app (on Windows) or by running 
+   the Anaconda Navigator app (on Windows) or by running
    `jupyter lab` in a terminal (Mac/Linux). You browser should
-   open with JupyterLab. 
+   open with JupyterLab.
 1. Brush up on your coding skills with [Software Carpentry's
    Introduction to Python](https://swcarpentry.github.io/python-novice-inflammation/)
-   lesson. 
+   lesson.
 
-**If you encounter any problems** please [open an "Issue" in 
+**If you encounter any problems** please [open an "Issue" in
 this repository](https://github.com/compgeolab/2020-aachen-inverse-problems/issues/new)
 (it will require a free GitHub account).
 
 We will be using [Jupyter Notebooks](https://jupyter.org/) to run our
-Python code and the libraries [numpy](https://numpy.org/), 
+Python code and the libraries [numpy](https://numpy.org/),
 [scipy](https://www.scipy.org/), and [matplotlib](https://matplotlib.org/).
-Anaconda already comes with all of these installed. 
+Anaconda already comes with all of these installed.
 
 Code for the forward modelling will be provided from this repository
 (TBD).
@@ -90,18 +90,18 @@ This course is designed to empower you to:
 
 I will assume that you:
 
-* Are comfortable with linear algebra (matrix and vector operations, 
+* Are comfortable with linear algebra (matrix and vector operations,
   norms, inverses, linear systems, etc)
 * Have an understanding of basic calculus (partial derivatives, gradients,
   Taylor series expansions)
-* Are able to program a computer to build and manipulate matrices and 
+* Are able to program a computer to build and manipulate matrices and
   vectors, solve linear systems, and make graphs/plots (in any language
   but Python or Matlab would be best)
 
 ## Format and schedule
 
 The course will be a mix of short presentations mixed with live coding
-(I will lead and learners will follow on their own computers). Participants 
+(I will lead and learners will follow on their own computers). Participants
 will also be assigned short challenges to complete.
 
 The following is a tentative schedule:
@@ -127,7 +127,11 @@ The following is a tentative schedule:
 
 ## License
 
-All code and text in this repository is free software:
+All Python source code in this repository is free software:
 you can redistribute it and/or modify it under the terms of the
 MIT License. A copy of this license is provided in
-[LICENSE.txt](https://github.com/compgeolab/2020-aachen-inverse-problems/blob/main/LICENSE.txt)).
+[LICENSE.txt](https://github.com/compgeolab/2020-aachen-inverse-problems/blob/main/LICENSE.txt).
+
+All other materials, including text and images, are distributed under the
+[CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+license (except where otherwise noted).
