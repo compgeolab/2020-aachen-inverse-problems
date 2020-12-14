@@ -72,54 +72,61 @@ def synthetic_model():
     return depths, basin_boundaries
 
 
-def make_prisms(depths, basin_boundaries):
+def prism_boundaries(depths, basin_boundaries):
     """
-    Generate a list of 3D prisms from the depths and boundaries.
+    Calculate the x coordinate of the boundaries of all prisms.
+    Will have depths.size + 1 elements.
     """
     boundaries = np.linspace(*basin_boundaries, depths.size + 1)
-    infinity = np.full_like(depths, 500e3)
-    prisms = np.transpose(
-        [
-            boundaries[:-1],  # east
-            boundaries[1:],  # west
-            -infinity,  # south
-            infinity,  # north
-            -depths,  # bottom
-            np.zeros_like(depths),  # top
-        ]
-    )
-    return prisms
+    return boundaries
 
 
 def forward_model(depths, basin_boundaries, density, x):
     """
     Calculate the predicted gravity for a given basin at x locations
     """
-    # Computation points
     easting = x
-    northing = np.zeros_like(x)
-    upward = np.zeros_like(x) + 1
-    prisms = make_prisms(depths, basin_boundaries)
+    boundaries = prism_boundaries(depths, basin_boundaries)
     result = np.zeros_like(x)
-    for m in range(prisms.shape[0]):
-        # Iterate over the prism boundaries to compute the result of the
-        # integration (see Nagy et al., 2000)
-        for i in range(2):
-            for j in range(2):
-                for k in range(2):
-                    shift_east = prisms[m, 1 - i]
-                    shift_north = prisms[m, 3 - j]
-                    shift_upward = prisms[m, 5 - k]
-                    result += (-1) ** (i + j + k) * kernel(
-                        shift_east - easting,
-                        shift_north - northing,
-                        shift_upward - upward,
-                    )
+    for m in range(depths.size):
+        prism_gravity(
+            x, boundaries[m], boundaries[m + 1], 0, depths[m], density, output=result
+        )
+    return result
+
+
+def prism_gravity(x, east, west, top, bottom, density, output=None):
+    """
+    Calculate the gravity of a single prism.
+    Append the result to output if it's given.
+    """
+    prism = [east, west, -200e3, 200e3, -bottom, -top]
     si2mgal = 1e5
     # The gravitational constant in SI units
     GRAVITATIONAL_CONST = 0.00000000006673
-    result *= GRAVITATIONAL_CONST * density * si2mgal
-    return result
+    scale = GRAVITATIONAL_CONST * density * si2mgal
+    northing = 0
+    upward = 10
+    if output is None:
+        output = np.zeros_like(x)
+    # Iterate over the prism boundaries to compute the result of the
+    # integration (see Nagy et al., 2000)
+    for i in range(2):
+        for j in range(2):
+            for k in range(2):
+                shift_east = prism[1 - i]
+                shift_north = prism[3 - j]
+                shift_upward = prism[5 - k]
+                output += (
+                    (-1) ** (i + j + k)
+                    * scale
+                    * kernel(
+                        shift_east - x,
+                        shift_north - northing,
+                        shift_upward - upward,
+                    )
+                )
+    return output
 
 
 def kernel(easting, northing, upward):
