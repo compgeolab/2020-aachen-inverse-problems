@@ -125,6 +125,22 @@ The following is a tentative schedule:
 | Wrap up | 10 min |
 | Questions and extra time for discussion | 20 min |
 
+## Workshop material
+
+All of the code and notes for this workshop are (or will be) uploaded
+to this repository. In here, you'll find:
+
+* [`cheatcodes.py`](cheatcodes.py): The ready-made Python functions for
+  forward modelling and plotting.
+* [`gravity-inversion.ipynb`](https://nbviewer.jupyter.org/github/compgeolab/2020-aachen-inverse-problems/blob/main/gravity-inversion.ipynb):
+  Jupyter notebook with the code that I wrote live in the workshop
+  (not including solutions to exercises).
+* [`gravity-inversion-solution.ipynb`](https://nbviewer.jupyter.org/github/compgeolab/2020-aachen-inverse-problems/blob/main/gravity-inversion-solution.ipynb):
+  Same as the above but with the exercise solutions.
+* [`gravity-inverse-problems-notes.pdf`](gravity-inverse-problems-notes.pdf): 
+  Notes and mathematical derivations made during the workshop
+  (will be uploaded after we're done).
+
 ## License
 
 All Python source code in this repository is free software:
