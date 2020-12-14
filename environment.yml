@@ -1,0 +1,7 @@
+name: 2020-aachen-gravity-inversion
+dependencies:
+  - python>=3.8
+  - numpy
+  - matplotlib
+  - jupyter
+  - jupyterlab
