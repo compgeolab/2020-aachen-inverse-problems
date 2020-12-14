@@ -43,8 +43,16 @@ Python code and the libraries [numpy](https://numpy.org/),
 [scipy](https://www.scipy.org/), and [matplotlib](https://matplotlib.org/).
 Anaconda already comes with all of these installed.
 
-Code for the forward modelling will be provided from this repository
-(TBD).
+**In case of emergency** (can't get things installed locally), you can
+use the link below to lauch Jupyter online on [Binder](https://mybinder.org/):
+
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/compgeolab/2020-aachen-inverse-problems/HEAD)
+
+**Beware** that Binder will not store your notebooks so if the connection
+drops, you will **lose all your code**. I recommend periodically
+downloading your notebook to your computer so you don't have to start
+over. Alternatively, all the code I'll be writing is provided in
+[`gravity-inversion.ipynb`](https://nbviewer.jupyter.org/github/compgeolab/2020-aachen-inverse-problems/blob/main/gravity-inversion.ipynb).
 
 ## About
 
