@@ -11,7 +11,7 @@ https://blog.rwth-aachen.de/irtg-mip/about-irtg-2379/).
 
 |        | Info |
 |-------:|:-----|
-|When    | 15 December / 13:00 - 16:30 CEST (UTC+2) |
+|When    | 15 December / 13:00 - 16:30 CEST (UTC+1) |
 |Where   | Online via Zoom |
 |YouTube | TBD |
 
@@ -43,8 +43,16 @@ Python code and the libraries [numpy](https://numpy.org/),
 [scipy](https://www.scipy.org/), and [matplotlib](https://matplotlib.org/).
 Anaconda already comes with all of these installed.
 
-Code for the forward modelling will be provided from this repository
-(TBD).
+**In case of emergency** (can't get things installed locally), you can
+use the link below to lauch Jupyter online on [Binder](https://mybinder.org/):
+
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/compgeolab/2020-aachen-inverse-problems/HEAD)
+
+**Beware** that Binder will not store your notebooks so if the connection
+drops, you will **lose all your code**. I recommend periodically
+downloading your notebook to your computer so you don't have to start
+over. Alternatively, all the code I'll be writing is provided in
+[`gravity-inversion.ipynb`](https://nbviewer.jupyter.org/github/compgeolab/2020-aachen-inverse-problems/blob/main/gravity-inversion.ipynb).
 
 ## About
 
@@ -124,6 +132,22 @@ The following is a tentative schedule:
 | Exercise: sharp vs smooth models (what about faults?) | 10 min |
 | Wrap up | 10 min |
 | Questions and extra time for discussion | 20 min |
+
+## Workshop material
+
+All of the code and notes for this workshop are (or will be) uploaded
+to this repository. In here, you'll find:
+
+* [`cheatcodes.py`](cheatcodes.py): The ready-made Python functions for
+  forward modelling and plotting.
+* [`gravity-inversion.ipynb`](https://nbviewer.jupyter.org/github/compgeolab/2020-aachen-inverse-problems/blob/main/gravity-inversion.ipynb):
+  Jupyter notebook with the code that I wrote live in the workshop
+  (not including solutions to exercises).
+* [`gravity-inversion-solution.ipynb`](https://nbviewer.jupyter.org/github/compgeolab/2020-aachen-inverse-problems/blob/main/gravity-inversion-solution.ipynb):
+  Same as the above but with the exercise solutions.
+* [`gravity-inverse-problems-notes.pdf`](gravity-inverse-problems-notes.pdf): 
+  Notes and mathematical derivations made during the workshop
+  (will be uploaded after we're done).
 
 ## License
 
